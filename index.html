@@ -127,10 +127,6 @@
 	});
 	var usernameValue = document.getElementById('username_value').value;
 	console.log(usernameValue!='botnet')
-	if(usernameValue!='botnet' && usernameValue!='vippro' && usernameValue!='promax'){
-		alertError("Lỗi kết nối đến server");
-	}
-	else{
 		$.ajax({
 		url: (server+'/auth/login'),
 		type: "POST",
@@ -161,7 +157,6 @@
 			}
 		}
 	});
-	}
 	
 });
 </script>
